@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: #262a2f;
+}
+.container {
+  width: 25rem;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 2rem 3rem;
+  border-radius: 5px;
+  background: #fff;
+}
+.container p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.container input {
+  width: 100%;
+  min-width: 13rem;
+  height: 2rem;
+  padding: 0 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.container button {
+  width: 100%;
+  height: 2rem;
+  background: #0033cc;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+.display {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+.showimg {
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+}
+.display img {
+  width: 100%;
+  padding: 10px;
+}
+.error {
+  animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(2px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  75% {
+    transform: translate(-2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
